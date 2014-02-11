@@ -41,10 +41,6 @@ Namespace of the CSS classes.
 
 ## Changelog
 
-### Version 0.1.1 (20140211)
-
-- Added travis config file.
-
 ### Version 0.1.0 (20140211)
 
 - Initial Release.
