@@ -1,6 +1,6 @@
 {
   "name": "gulp-imacss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A gulp plugin for using imacss (the image to datauri to CSS transformer).",
   "author": {
     "name": "André König",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",

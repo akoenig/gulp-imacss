@@ -41,6 +41,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.1.1 (20140211)
+
+- Fixed test runner call in the package.json
+
 ### Version 0.1.0 (20140211)
 
 - Initial Release.
