@@ -25,7 +25,7 @@ module.exports = function (filename, namespace) {
     var images = [];
 
     if (!filename) {
-        throw new PluginError(PLUGIN_NAME,  'Missing CSS filename.');
+        throw new gutil.PluginError(PLUGIN_NAME,  'Missing CSS filename.');
     }
 
     function cache (image) {
@@ -33,7 +33,8 @@ module.exports = function (filename, namespace) {
     }
 
     function transform () {
-        var self      = this,
+        /*jshint validthis:true */
+        var self = this,
             selectors = [];
 
         imacss
@@ -42,7 +43,7 @@ module.exports = function (filename, namespace) {
                 selectors.push(selector);
             })
             .on('error', function (err) {
-                throw new PluginError(PLUGIN_NAME,  err);
+                throw new gutil.PluginError(PLUGIN_NAME,  err);
             })
             .on('finish', function ()  {
                 var css = new gutil.File({

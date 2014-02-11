@@ -1,7 +1,7 @@
 {
   "name": "gulp-imacss",
   "version": "0.1.0",
-  "description": "A gulp plugin for using imacss.",
+  "description": "A gulp plugin for using imacss (the image to datauri to CSS transformer).",
   "author": {
     "name": "André König",
     "email": "andre.koenig@posteo.de"
@@ -33,6 +33,8 @@
     "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "gulp": "~3.5.2"
+    "gulp": "~3.5.2",
+    "gulp-jshint": "~1.4.0",
+    "gulp-jasmine": "~0.1.3"
   }
 }
