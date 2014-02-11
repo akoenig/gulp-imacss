@@ -39,6 +39,16 @@ Default: null
 
 Namespace of the CSS classes.
 
+## Changelog
+
+### Version 0.1.1 (20140211)
+
+- Added travis config file.
+
+### Version 0.1.0 (20140211)
+
+- Initial Release.
+
 ## Author
 
 Copyright 2014, [André König](http://iam.andrekoenig.info) (andre.koenig@posteo.de)
