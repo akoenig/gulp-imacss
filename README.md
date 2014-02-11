@@ -14,7 +14,7 @@ npm install --save-dev gulp-imacss
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var jshint = require('gulp-imacss');
+var imacss = require('gulp-imacss');
 
 gulp.task('imacss', function () {
     gulp.src('./images/**/*.svg')
