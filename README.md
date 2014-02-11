@@ -1,4 +1,4 @@
-# gulp-[imacss](http://github.com/akoenig/imacss)
+# gulp-[imacss](http://github.com/akoenig/imacss) [![Build Status](https://travis-ci.org/akoenig/gulp-imacss.png?branch=master)](https://travis-ci.org/akoenig/gulp-imacss)
 
 > imacss (the image to datauri to CSS transformer) plugin for gulp
 
