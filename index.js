@@ -24,10 +24,6 @@ module.exports = function (filename, namespace) {
 
     var images = [];
 
-    if (!filename) {
-        throw new gutil.PluginError(PLUGIN_NAME,  'Missing CSS filename.');
-    }
-
     function cache (image) {
         images.push(image);
     }
@@ -42,10 +38,8 @@ module.exports = function (filename, namespace) {
             .on('data', function (selector) {
                 selectors.push(selector);
             })
-            .on('error', function (err) {
-                throw new gutil.PluginError(PLUGIN_NAME,  err);
-            })
-            .on('finish', function ()  {
+            .once('error', this.emit.bind(this, 'error'))
+            .once('finish', function ()  {
                 var css = new gutil.File({
                     path: filename,
                     contents: new Buffer(selectors.join(gutil.linefeed))
@@ -54,6 +48,10 @@ module.exports = function (filename, namespace) {
                 self.emit('data', css);
                 self.emit('end');
             });
+    }
+
+    if (!filename) {
+        throw new gutil.PluginError(PLUGIN_NAME,  'Missing CSS filename.');
     }
 
     return through(cache, transform);

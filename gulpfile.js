@@ -33,10 +33,4 @@ gulp.task('test', function () {
         .pipe(jasmine());
 });
 
-// gulp.task('imacss', function () {
-//     gulp.src('./test/*.svg')
-//         .pipe(imacss('images.svg.css', 'mooo'))
-//         .pipe(gulp.dest('./build/'));
-// })
-
 gulp.task('default', ['lint', 'test']);
