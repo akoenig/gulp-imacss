@@ -16,8 +16,7 @@
 var gulp    = require('gulp'),
     jshint  = require('gulp-jshint'),
     jasmine = require('gulp-jasmine'),
-    imacss  = require('./'),
-    paths  = {};
+    paths   = {};
 
 paths.sources = ['./*.js', './specs/**/.js'];
 paths.specs    = ['./specs/*.spec.js'];
