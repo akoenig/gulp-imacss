@@ -29,13 +29,13 @@ gulp.task('imacss', function () {
 
 #### filename
 Type: `String`
-Default: null
+Default: undefined
 
 Name of the CSS file that should be generated, e.g. `images.svg.css`.
 
-#### namespace
+#### namespace (optional)
 Type: `String`  
-Default: null
+Default: undefined
 
 Namespace of the CSS classes.
 
