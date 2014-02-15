@@ -41,6 +41,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.1.2 (20140215)
+
+- Refactoring in order to remove the lodash dependency.
+
 ### Version 0.1.1 (20140211)
 
 - Fixed test runner call in the package.json

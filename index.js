@@ -17,7 +17,6 @@ var path        = require('path'),
     through     = require('through'),
     imacss      = require('imacss'),
     gutil       = require('gulp-util'),
-    lodash      = require('lodash'),
     PLUGIN_NAME = 'gulp-imacss';
 
 module.exports = function (filename, namespace) {
@@ -25,7 +24,7 @@ module.exports = function (filename, namespace) {
     var images = [];
 
     function cache (image) {
-        images.push(image);
+        images.push(image.path);
     }
 
     function transform () {
@@ -34,7 +33,7 @@ module.exports = function (filename, namespace) {
             selectors = [];
 
         imacss
-            .transform(lodash.pluck(images, 'path'), namespace)
+            .transform(images, namespace)
             .on('data', function (selector) {
                 selectors.push(selector);
             })

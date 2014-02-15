@@ -32,6 +32,7 @@ describe('The "gulp-imacss" plugin', function () {
         stream.on('data', function (css) {
             expect(css.path).toBe(filename);
             expect(css.contents).toBeDefined();
+            expect(css.contents.toString('utf-8').substring(0, 7)).toBe('.imacss');
 
             done();
         });
