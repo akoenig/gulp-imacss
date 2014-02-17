@@ -57,6 +57,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.2.1 (20140217)
+
+- Set preferGlobal version.
+
 ### Version 0.2.0 (20140217)
 
 - Refactored the index file and integrated 'imacss' v0.2.0
