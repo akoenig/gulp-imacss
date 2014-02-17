@@ -57,9 +57,9 @@ Namespace of the CSS classes.
 
 ## Changelog
 
-### Version 0.2.1 (20140217)
+### Version 0.2.1 and 0.2.2 (20140217)
 
-- Set preferGlobal version.
+- Fixed some documentation problems.
 
 ### Version 0.2.0 (20140217)
 
