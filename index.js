@@ -14,44 +14,39 @@
 'use strict';
 
 var path        = require('path'),
-    through     = require('through'),
+    through     = require('through2'),
     imacss      = require('imacss'),
     gutil       = require('gulp-util'),
     PLUGIN_NAME = 'gulp-imacss';
 
 module.exports = function (filename, namespace) {
 
-    var images = [];
+    var selectors = [];
 
-    function cache (image) {
-        images.push(image.path);
+    function transform (file, enc, callback) {
+        imacss
+            .transform(file, namespace)
+            .on('data', function (selector) {
+                selectors.push(selector.trim());
+            })
+            .on('finish', callback)
+            .once('error', this.emit.bind(this, 'error'));
     }
 
-    function transform () {
-        /*jshint validthis:true */
-        var self = this,
-            selectors = [];
+    function finalize (callback) {
+        var css = new gutil.File({
+            path: filename,
+            contents: new Buffer(selectors.join(gutil.linefeed))
+        });
 
-        imacss
-            .transform(images, namespace)
-            .on('data', function (selector) {
-                selectors.push(selector);
-            })
-            .once('error', this.emit.bind(this, 'error'))
-            .once('finish', function ()  {
-                var css = new gutil.File({
-                    path: filename,
-                    contents: new Buffer(selectors.join(gutil.linefeed))
-                });
+        this.push(css);
 
-                self.emit('data', css);
-                self.emit('end');
-            });
+        return callback();
     }
 
     if (!filename) {
         throw new gutil.PluginError(PLUGIN_NAME,  'Missing CSS filename.');
     }
 
-    return through(cache, transform);
+    return through.obj(transform, finalize);
 };
