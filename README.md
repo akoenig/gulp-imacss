@@ -23,7 +23,7 @@ gulp.task('imacss', function () {
 });
 ```
 
-Your are also able to do something different before piping it to `imacss`:
+You're are also able to do something different before piping it to `imacss`:
 
 ```javascript
 var svg2png = require('gulp-svg2png');
@@ -37,7 +37,7 @@ gulp.task('imacss', function () {
 });
 ```
 
-In this case the result would be first a transformation from SVG to PNG images and then an inlining into the CSS file `images.png.css`.
+In this case the result would be first a transformation from SVG to PNG images and then the production of the CSS file `images.png.css`.
 
 ## API
 
