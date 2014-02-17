@@ -57,6 +57,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.2.0 (20140217)
+
+- Refactored the index file and integrated 'imacss' v0.2.0
+
 ### Version 0.1.2 (20140215)
 
 - Refactoring in order to remove the lodash dependency.
