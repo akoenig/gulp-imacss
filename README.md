@@ -57,6 +57,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.2.3 (20140221)
+
+- Added more files to .npmignore.
+
 ### Version 0.2.1 and 0.2.2 (20140217)
 
 - Fixed some documentation problems.
