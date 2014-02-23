@@ -24,6 +24,7 @@ module.exports = function (filename, namespace) {
     var selectors = [];
 
     function transform (file, enc, callback) {
+        /*jshint validthis:true */
         imacss
             .transform(file, namespace)
             .on('data', function (selector) {
@@ -39,6 +40,7 @@ module.exports = function (filename, namespace) {
             contents: new Buffer(selectors.join(gutil.linefeed))
         });
 
+        /*jshint validthis:true */
         this.push(css);
 
         return callback();
