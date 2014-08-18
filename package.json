@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/akoenig/gulp-imacss",
   "dependencies": {
-    "imacss": "~0.2.0",
+    "imacss": "~0.3.0",
     "gulp-util": "~2.2.14",
     "through2": "~0.4.1"
   },
