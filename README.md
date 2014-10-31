@@ -57,6 +57,10 @@ Namespace of the CSS classes.
 
 ## Changelog
 
+### Version 0.3.0 (20141031)
+
+- Upgraded to `imacss` v0.3.0
+
 ### Version 0.2.3 (20140221)
 
 - Added more files to .npmignore.
