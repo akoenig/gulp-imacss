@@ -27,7 +27,7 @@ You're are also able to do something different before piping it to `imacss`:
 
 ```javascript
 var svg2png = require('gulp-svg2png');
-    imacss  = require('gulp-imacss');
+var imacss  = require('gulp-imacss');
 
 gulp.task('imacss', function () {
     gulp.src('./images/**/*.svg')
@@ -55,36 +55,6 @@ Default: undefined
 
 Namespace of the CSS classes.
 
-## Changelog
-
-### Version 0.3.0 (20141031)
-
-- Upgraded to `imacss` v0.3.0
-
-### Version 0.2.3 (20140221)
-
-- Added more files to .npmignore.
-
-### Version 0.2.1 and 0.2.2 (20140217)
-
-- Fixed some documentation problems.
-
-### Version 0.2.0 (20140217)
-
-- Refactored the index file and integrated 'imacss' v0.2.0
-
-### Version 0.1.2 (20140215)
-
-- Refactoring in order to remove the lodash dependency.
-
-### Version 0.1.1 (20140211)
-
-- Fixed test runner call in the package.json
-
-### Version 0.1.0 (20140211)
-
-- Initial Release.
-
 ## Author
 
-Copyright 2014, [André König](http://iam.andrekoenig.info) (andre.koenig@posteo.de)
+Copyright 2014 - 2015, [André König](http://andrekoenig.info) (andre.koenig@posteo.de)

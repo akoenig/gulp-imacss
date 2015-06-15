@@ -1,8 +1,25 @@
 {
+    "curly": true,
+    "eqeqeq": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonew": true,
+    "sub": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "boss": true,
+    "eqnull": true,
+    "strict": true,
+    "immed": true,
+    "expr": true,
+    "latedef": "true",
+    "quotmark": "single",
+    "indent": 4,
     "node": true,
     "globals": {
-        "expect": false,
-        "it": false,
-        "describe": false
+      "describe": false,
+      "it": false
     }
 }

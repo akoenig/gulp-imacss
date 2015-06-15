@@ -1,7 +1,7 @@
 /*
  * gulp-imacss
  *
- * Copyright(c) 2014 André König <andre.koenig@posteo.de>
+ * Copyright(c) 2014 - 2015 André König <andre.koenig@posteo.de>
  * MIT Licensed
  *
  */
@@ -13,11 +13,11 @@
 
 'use strict';
 
-var path        = require('path'),
-    through     = require('through2'),
-    imacss      = require('imacss'),
-    gutil       = require('gulp-util'),
-    PLUGIN_NAME = 'gulp-imacss';
+var through = require('through2');
+var imacss = require('imacss');
+var gutil = require('gulp-util');
+
+var PLUGIN_NAME = 'gulp-imacss';
 
 module.exports = function (filename, namespace) {
 
