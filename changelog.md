@@ -1,4 +1,4 @@
-# UNRELEASED
+# 1.0.0 (2015-06-15)
 
   * 2efe99e doc: year update
   * ae79169 feature: `imacss` 1.0.0 upgrade
