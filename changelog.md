@@ -1,6 +1,7 @@
 # UNRELEASED
 
-  * initial
+  * 2efe99e doc: year update
+  * ae79169 feature: `imacss` 1.0.0 upgrade
 
 # Version 0.3.0 (20141031)
 
